@@ -1,0 +1,223 @@
+/* 主网页 */
+/* 导航栏的背景 */
+header{
+   background-color:rgba(42, 186, 162, 0.36);
+   height: 50px;
+   width:100%;
+   border-radius: 10px;
+}
+/* 导航栏的坐标 */
+header ul{
+   position:absolute;
+   right:5vw;
+   top:0;
+   line-height: 50px;
+}
+/* 导航栏的间距 */
+header li{
+   display:inline;
+   margin-right:4vw;
+   font-family:Georgia, 'Times New Roman', Times, serif;
+   font-size: 20px;
+}
+/* 导航栏选项的修饰 */
+li a{
+   text-decoration: none;
+}
+li a:hover{
+   background-color: rgba(12, 219, 178, 0.442);
+   border: 0px solid rgba(12, 219, 178, 0.442);
+   border-radius: 6px;
+}
+/* 主标题的位置及其颜色 */
+h1{
+   position:absolute;
+   margin-left:120px;
+   top:0;
+   line-height: 50px;
+   font-family:'Courier New', Courier, monospace;
+}
+h1 a{
+   color:rgba(191, 109, 129, 0.531);
+   text-decoration: none;
+}
+.avatar img{
+   width:48px;
+   margin-left: 30px;
+   border:solid 1px cyan;
+   border-radius:30px;
+}
+/* 副标题的间距以及大小 */
+ h2{
+    color:rgba(206, 103, 120, 0.503);
+    font-size:40px;
+    margin:25px;
+    }
+/* 网址的修饰 */
+ p a{
+   text-decoration: none;
+   color:rgba(219, 14, 14, 0.836);
+   }
+ p a:hover{
+    text-decoration: underline;  
+   }
+.catalogue p{
+      margin:10px 0; 
+      border:1px rgba(14, 211, 233, 0.942) solid ;
+      padding:5px 7px;
+      border-radius:5px;
+   } 
+/* 背景图以及副标题的排列 */
+.catalogue{
+   background-color:black;
+   height:95vh;
+   background-image:url("6.jpg");
+   border:1px solid white;
+   border-radius: 20px;
+   background-repeat:no-repeat;
+   background-size:cover;
+   background-position:center;
+   display:flex;
+   flex-direction:column;
+   align-items:center;
+   justify-content:center;
+}
+
+/* 子网页 about us */
+.article h4{
+   font-size: 25px;
+   color: rgb(245, 248, 248);
+   margin: 20px;
+   font-family: 'Courier New', Courier, monospace;
+}
+.article{
+   background-image: url(./29.jpg);
+   background-repeat:no-repeat;
+   background-size:cover;
+   background-position:center;
+   display:flex;
+   flex-direction:column;
+   height:800px;
+   border-radius: 15px;
+}
+
+/* 子网页 vip */
+.download h5{
+font-size: 35px;
+margin :40px ;
+font-family:cursive;
+}
+.download a{
+   text-decoration: none;
+   color:rgba(190, 85, 159, 0.699);
+   border:solid;
+   border-radius: 10px;
+}
+.download a:hover{
+text-decoration: underline;
+color:rgb(23, 111, 199);
+}
+.download{
+   background-image: url(./18.jpg);
+   background-repeat:no-repeat;
+   background-size:cover;
+   background-position:center;
+   width: 100%;
+   height:800px;
+   display:flex;
+   flex-direction:column;
+   justify-content: center;
+   border-radius: 16px;
+}
+
+/* 菜单的设置以及一些全局的设定 */
+.menu{
+   display:none;
+}
+p{
+   color:black;
+   }
+*{
+      padding:0;
+      margin:0;
+   }
+/* 登录界面 */
+body1{
+   display:flex;
+   flex-direction:column;
+   justify-content:center;
+   align-items:center;
+   height:100vh;
+   background:url(./34.webp) no-repeat;
+   background-size:cover;
+   border-radius: 15px;
+}
+.box{
+   display:flex;
+   flex-direction:column;
+   justify-content:center;
+   align-items:center;
+   backdrop-filter: blur(3px);
+   width:500px;
+   height:400px;
+   border-radius:30px;
+   background:rgba(0,0,0,0.3);
+   box-shadow: 0 0 5px 5px rgba(0,0,0,0.3);
+}
+
+.box1  div{
+   width:350px;
+   height:50px;
+   margin:30px;
+   color:rgba(178, 171, 171, 0.808);
+}
+.box1  div input {
+   width:100%;
+   height:30px;
+   background:transparent;
+   border:none;
+   border-bottom: 1px solid white;
+   margin-top:10px;
+   color: #BDCADA;
+}
+.enterbutton input{
+   width:75px;
+   height:36px;
+   margin-top: 20px;
+   border:none;
+   border-radius: 20px;
+   background-image: linear-gradient(to right ,#e77eba,#ff6092);
+   cursor:pointer;
+}
+.enterbutton :hover{
+   box-shadow: 0 0 6px rgba(0,0,0,0.5) inset;
+}
+/* 给输入框提示文字改变颜色 */
+input::-webkit-input-placeholder{
+   color:#BDCADA
+}
+
+/* 响应式设计语法 */
+@media screen and (max-width:900px){
+   header li{
+      display:none;
+   }
+   header h1{
+      left:20%;
+      transform:translateX(-50%);
+   }
+   .avatar img{
+    display: none;
+   }
+   .menu{
+      display:block;
+      background-color:transparent;
+      color:white;
+      font-size:35px;
+      position:absolute;
+      top:15px;
+      left:20px;
+      border:none;
+      cursor:pointer;
+   }
+}
